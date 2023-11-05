@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.pai{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:85px;
+    align-items: center;
+    padding-left: 10%;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+   
+}
+
+.elemento_fundo{
+    font-family:'Russo One', sans-serif;
+    background-image: url(login_img_desktop.png);
+    color: white;
+}
+
+.bt_campos{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.65);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.2px);
+-webkit-backdrop-filter: blur(9.2px);
+border: 1px solid rgba(255, 255, 255, 0.31);
+
+    /* confs gerais*/
+    
+color: white;
+padding: 5%;
+font-size: 20px;
+color: black;
+}
+
+.praga{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.title_principal{
+    font-size: 40px;
+}
+
+.btnsec{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.tr{
+    width: 300px;
+    padding: 4%;
+    border: none;
+    border-radius: 30px;
+}
+
+.rt{
+    width: 300px;
+    padding: 4%;
+    border: none;  
+    border-radius: 30px;
+}
+
+.btn{
+    width: 325px;
+    padding: 4%;
+    border-radius: 30px; 
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.dec{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+/*Animações*/
+
+.btn:hover{
+    background-color: rgb(226, 43, 119);
+}
+
+.dec:hover{
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+/*Aplicando o media queries*/
+
+@media (max-width: 770px){
+   .pai{
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   }
+   .elemento_fundo{
+    background-image: url(mobile_img.png);
+   
+   }
+   .bt_campos{
+   padding: 15%;
+    }
+
+    .tr{
+        width: 250px;
+        padding: 4%;
+        border: none;
+        border-radius: 30px;
+    }
+    
+    .rt{
+        width: 250px;
+        padding: 4%;
+        border: none;  
+        border-radius: 30px;
+    }
+
+    .btn{
+        width: 250px;
+        padding: 4%;
+        border-radius: 30px; 
+        font-size: 20px;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+}
+
+/*media queries para celular*/
+
+@media (max-width: 480px){
+   .pai{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   }
+   .elemento_fundo{
+    background-image: url(mobile_img.png);
+   
+   }
+   .bt_campos{
+   padding: 15%;
+   align-items: center;
+    }
+
+    .tr{
+        width: 200px;
+        padding: 4%;
+        border: none;
+        border-radius: 30px;
+    }
+    
+    .rt{
+        width: 200px;
+        padding: 4%;
+        border: none;  
+        border-radius: 15px;
+    }
+
+    .btn{
+        width: 220px;
+        padding: 4%;
+        border-radius: 30px; 
+        font-size: 20px;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+    .dec{
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 12px;
+    }    
+}
